@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/splash_end"/> // 배경을 검정으로
+    <item>
+        <bitmap
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:src="@drawable/splash_end"/>  // 채원 배경이미지 삽입
+    </item>
+
+</layer-list>

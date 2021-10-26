@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "847635306997",
+    "firebase_url": "https://palliny-e7d7f-default-rtdb.firebaseio.com",
+    "project_id": "palliny-e7d7f",
+    "storage_bucket": "palliny-e7d7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847635306997:android:e0415edcefda16d867a8bc",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847635306997-jg6j5csgtrohsqpjv5bbhphjqfsu6qf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWSJPDi48K44CL96CTh2OJQYNS0uxq-Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847635306997-jg6j5csgtrohsqpjv5bbhphjqfsu6qf9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

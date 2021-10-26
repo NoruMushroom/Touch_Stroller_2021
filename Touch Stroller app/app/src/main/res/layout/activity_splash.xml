@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 상단 타이틀 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toptitle"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dxp"
+                android:gravity="center"
+                android:text="LOGOUT"
+                android:textSize="5pt"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/controller"
+                android:textSize="8pt"
+                android:fontFamily="@font/dxp"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="60dp"/>
+
+        </LinearLayout>
+
+        <!-- 블루투스 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/radius3"
+            android:paddingTop="20dp"
+            android:layout_marginHorizontal="30dp">
+
+            <Button
+                android:id="@+id/bt_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius5"
+                android:fontFamily="@font/dxp"
+                android:text="Bluetooth"
+                android:textSize="5pt"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/radius4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/st_connected"
+                    android:textColor="@color/black"
+                    android:textSize="7pt"
+                    android:fontFamily="@font/dxp"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:id="@+id/connection_status_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dxp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 온습도, 아이 상태 -->
+        <LinearLayout
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/radius3"
+            android:paddingTop="20dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/st_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/noface"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/radius4"
+                android:padding="20dp">
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="온도"
+                android:textSize="7pt"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dxp"
+                android:padding="15dp"
+                android:layout_marginHorizontal="15dp"/>
+
+            <TextView
+                android:id="@+id/humd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="습도"
+                android:textSize="7pt"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dxp"
+                android:padding="15dp"
+                android:layout_marginHorizontal="15dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!-- 카카오 맵 -->
+        <LinearLayout
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/radius3"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="30dp">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- 자동 / 수동 -->
+        <LinearLayout
+            android:id="@+id/auha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/radius3"
+            android:paddingTop="20dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                >
+
+                <Switch
+                    android:id="@+id/choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자동 / 수동"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dxp"
+                    android:layout_gravity="center"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:layout_marginRight="15dp"/>
+
+                <Button
+                    android:id="@+id/send_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="적용"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ToggleButton
+                    android:id="@+id/bt_leds"
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="LED ON"
+                    android:textOff="LED OFF"
+                    android:fontFamily="@font/dxp"
+                    android:background ="@drawable/radius3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bt_suns"
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="SUN ON"
+                    android:textOff="SUN OFF"
+                    android:fontFamily="@font/dxp"
+                    android:background ="@drawable/radius3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bt_winds"
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="WIND ON"
+                    android:textOff="WIND OFF"
+                    android:fontFamily="@font/dxp"
+                    android:background ="@drawable/radius3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!-- 전송한 신호 리스트  -->
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginVertical="20dp"
+            android:id="@+id/message_listview" />
+
+    </LinearLayout>
+
+</ScrollView>

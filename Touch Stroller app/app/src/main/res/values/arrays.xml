@@ -1,0 +1,20 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>0도</item>
+        <item>15도</item>
+        <item>30도</item>
+        <item>45도</item>
+        <item>60도</item>
+        <item>75도</item>
+        <item>90도</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>20%</item>
+        <item>40%</item>
+        <item>60%</item>
+        <item>80%</item>
+        <item>100%</item>
+    </string-array>
+</resources>

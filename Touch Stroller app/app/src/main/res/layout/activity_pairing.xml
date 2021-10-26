@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 상단 로고  -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/controller"
+            android:textSize="12pt"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#acc0d9"
+            android:fontFamily="@font/dxp"/>
+
+        <!-- 연결된 디바이스  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="30dp"
+            android:fadingEdge="horizontal|vertical"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius5"
+                android:fontFamily="@font/dxp"
+                android:text="Bluetooth"
+                android:textSize="7pt"
+                android:padding="10dp"
+                android:layout_marginRight="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/st_connected"
+                android:textColor="@color/black"
+                android:textSize="10pt"
+                android:fontFamily="@font/dxp"
+                android:background="@drawable/radius3"
+                android:padding="11dp"/>
+
+            <TextView
+                android:id="@+id/connection_status_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dxp" />
+
+
+        </LinearLayout>
+
+        <!-- 블루투스 선택버튼 / 날씨  -->
+        <LinearLayout
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/radius3"
+            android:layout_margin="30dp">
+
+                <ImageView
+                    android:id="@+id/st_baby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/noface"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/baby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="아기 상태"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dxp"/>
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="온도"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dxp"/>
+
+                <TextView
+                    android:id="@+id/humd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="습도"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dxp"/>
+
+        </LinearLayout>
+
+        <!-- 카카오 MAP -->
+        <LinearLayout
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/radius4"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp">
+
+            <RelativeLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="30dp">
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!-- 자동 / 수동 선택 버튼  -->
+        <LinearLayout
+            android:id="@+id/auha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/radius5"
+            android:layout_gravity="center">
+
+            <Switch
+                android:id="@+id/choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동 / 수동"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dxp"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+            <Button
+                android:id="@+id/send_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="적용"/>
+
+        </LinearLayout>
+
+        <!-- 수동 조작  -->
+        <LinearLayout
+            android:id="@+id/pas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <!-- LED -->
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/radius3"
+                android:layout_margin="15dp"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_led"
+                    android:textSize="30sp"
+                    android:textColor="#FFFDFD"
+                    android:fontFamily="@font/dxp"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bt_leds"
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    android:fontFamily="@font/dxp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <!-- SUN -->
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/radius3"
+                android:layout_margin="15dp"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_sun"
+                    android:textSize="30sp"
+                    android:textColor="#FFFDFD"
+                    android:fontFamily="@font/dxp"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bt_suns"
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    android:fontFamily="@font/dxp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <!-- 바람 -->
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/radius3"
+                android:layout_margin="15dp"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_wind"
+                    android:textSize="30sp"
+                    android:textColor="#FFFDFD"
+                    android:fontFamily="@font/dxp"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bt_winds"
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    android:fontFamily="@font/dxp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <!-- 전송한 신호 리스트  -->
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/message_listview" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name"><u>Paliny</u></string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+
+
+    <!-- Sync Preferences -->
+    <string name="auto_sun">썬 루프 (자동/수동)</string>
+    <string name="auto_led">LED (자동/수동)</string>
+    <string name="auto_wind">선풍기 (자동/수동)</string>
+    <string name="pas_sun">썬 루프 (ON/OFF)</string>스
+    <string name="pas_led">LED (ON/OFF)</string>
+    <string name="pas_wind">선풍기 (ON/OFF)</string>
+    <string name="bt_sun">SUN</string>
+    <string name="bt_led">LED</string>
+    <string name="bt_wind">바람</string>
+    <string name="st_connected">연결된 디바이스:</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_test_weather">Test_weather</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="controller"><u>Palliny Controller</u></string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="kakao_app_key">공석</string>
+
+</resources>
