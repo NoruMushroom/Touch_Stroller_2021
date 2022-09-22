@@ -117,9 +117,9 @@ public class Pairing extends AppCompatActivity {
 
         map = (LinearLayout)findViewById(R.id.map);
         mapViewContainer = (RelativeLayout)findViewById(R.id.map_view);
-        mapView = new MapView(this);
-        mapViewContainer.addView(mapView);
-        mapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOnWithoutHeading);
+        //mapView = new MapView(this);
+        //mapViewContainer.addView(mapView);
+        //mapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOnWithoutHeading);
 
         // -----------------------------------------------------------------------------------------
         // ---------------------------------------VISIBLE------------------------------------------
@@ -229,9 +229,11 @@ public class Pairing extends AppCompatActivity {
             });
 
         }
-
-
-    }
+        temp = findViewById(R.id.temp);
+        humd = findViewById(R.id.humd);
+        baby = findViewById(R.id.baby);
+        st_baby = findViewById(R.id.st_baby);
+    }//이게 진짜
 
 
     // -----------------------------------------------------------------------------------------
@@ -392,6 +394,9 @@ public class Pairing extends AppCompatActivity {
                                 Log.d(TAG, "recv message: " + recvMessage);
 
                                 publishProgress(recvMessage);
+                                array = recvMessage.split(",");
+                                Temp_data();
+                                Babyface();
                             } else {
                                 readBuffer[readBufferPosition++] = b;
                             }
@@ -539,34 +544,38 @@ public class Pairing extends AppCompatActivity {
         }
     }
 
-    public void Babyface(){
-
-        st_baby = findViewById(R.id.st_baby);
-        baby = findViewById(R.id.baby);
-
-        baby.setText(array[2]);
-
-        if(array[2] == "100"){
-            st_baby.setImageResource(R.drawable.smile);
-        }
-        if(array[2] == "200"){
-            st_baby.setImageResource(R.drawable.wake);
-        }
-        if(array[2] == "300"){
-            st_baby.setImageResource(R.drawable.sleep);
-        }
-        if(array[2] == "400"){
-            st_baby.setImageResource(R.drawable.noface);
-        }
-
+    void Babyface(){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if(array[2].equals("Smile")){
+                    Log.d(TAG, "smile");
+                    st_baby.setImageResource(R.drawable.smile);
+                }
+                if(array[2].equals("Wake Up")){
+                    Log.d(TAG, "wake");
+                    st_baby.setImageResource(R.drawable.wake);
+                }
+                if(array[2].equals("Sleep")){
+                    Log.d(TAG, "Sleep");
+                    st_baby.setImageResource(R.drawable.sleep);
+                }
+                if(array[2].equals("No Detection")){
+                    Log.d(TAG, "noface");
+                    st_baby.setImageResource(R.drawable.noface);
+                }
+            }
+        });
     }
 
-    public void Temp(){
-        temp = findViewById(R.id.temp);
-        humd = findViewById(R.id.humd);
-
-        temp.setText(array[0].concat("C"));
-        humd.setText(array[1].concat("%"));
+    void Temp_data() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                temp.setText(array[0].concat("℃"));
+                humd.setText(array[1].concat("%"));
+            }
+        });
     }
 
     // ---------------------------------------------------------------------------------------------
