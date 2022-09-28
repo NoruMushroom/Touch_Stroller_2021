@@ -1,7 +1,4 @@
-# NoruMushroom-2021-Touch-Stroller
-
-
-<h1> 프로젝트 명칭 - 터치 유모차</h1>
+<h1>< 프로젝트 명칭 - 터치 유모차 ></h1>
 <br><br><br>
 <h2> * 해결하고자 하는 과제</h2>
 저희는 사고가 빈번히 발생하고 있는 유모차에 관점을 맞춰서 아이디어를 계획하였습니다.<br>
@@ -69,7 +66,7 @@
 
 
 <h2> * Languages & Tools </h2>
-<div class="col>
+<div class="col">
   <img src="https://img.shields.io/badge/Python-black?style=flat-square&logo=python&logoColor=White"/>
   <img src="https://img.shields.io/badge/Java-Green?style=flat-square&logo=Java&logoColor=White"/>
   <img src="https://img.shields.io/badge/Android Studio-blue?style=flat-square&logo=androidstudio&logoColor=green"/>
