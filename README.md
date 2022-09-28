@@ -1,12 +1,14 @@
 # NoruMushroom-2021-Touch-Stroller
+
+
 <h1> 프로젝트 명칭 - 터치 유모차</h1>
-<br><br>
+<br><br><br>
 <h2> * 해결하고자 하는 과제</h2>
 저희는 사고가 빈번히 발생하고 있는 유모차에 관점을 맞춰서 아이디어를 계획하였습니다.<br>
 기존에 출시한 유모차들은 편의성을 중시하고 안정성을 놓치고 있다는 느낌을 받았습니다.<br>
 저희 팀은 편의성과 안정성 어느 하나 놓치지 않고 동시에 집중하여 두 마리 토끼를 잡고자 아이디어를 구상했습니다
 
-<br><br><br>
+<br><br><br><br><br>
 
 <h2> * 해결 방안</h2>
 <h3>1. 접촉</h3>우선 안정성문제를 해결하기 위해서는 유모차가 운전자와의 접촉이 없으면 유모차는 멈춤 상태를 유지하는 생각을 해봤습니다.<br>
@@ -51,7 +53,7 @@
 또 추가해볼 예정인 내용으로 조도센서를 이용하여 햇빛 가리개를 제어하는 기능, 자이로센서를 통해 받는 경사로에 따라<br>
 모터의 출력을 조절하여 오르막길 내리막길을 이동하는데 도움이 되도록 하는 기능을 추가할 예정입니다.
 
-<br><br><br>
+<br><br><br><br><br><br>
 
 <h2> * 기대 효과</h2>
 터치 유모차를 통해 얻을 수 있는 기대효과는 다음과 같습니다. <br>
@@ -63,10 +65,10 @@
 -아이에 관한 모든 것을 휴대폰으로 제어할 수 있습니다. <br>
 -아이의 상태를 휴대폰으로 확인 할 수 있습니다.<br>
 
-<br><br>
+<br><br><br><br><br>
 
 
-<h2> * Language & Tools </h2>
+<h2> * Languages & Tools </h2>
 <div class="col>
   <img src="https://img.shields.io/badge/Python-black?style=flat-square&logo=python&logoColor=White"/>
   <img src="https://img.shields.io/badge/Java-Green?style=flat-square&logo=Java&logoColor=White"/>
@@ -77,6 +79,4 @@
 
 
 
-<br><br><br><br>
-                                                                                                              <hr>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ChoeHansaem)](https://github.com/ChoeHansaem/github-readme-stats)
+<br><br><br><br><br><br>
