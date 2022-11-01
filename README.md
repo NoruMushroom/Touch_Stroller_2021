@@ -1,4 +1,4 @@
-<h1>< 프로젝트 명칭 - 터치 유모차 ></h1>
+# 터치 유모차
 <h2>1. 해결하고자 하는 과제</h2>
 저희는 사고가 빈번히 발생하고 있는 유모차에 관점을 맞춰서 아이디어를 계획하였습니다.<br>
 기존에 출시한 유모차들은 편의성을 중시하고 안정성을 놓치고 있다는 느낌을 받았습니다.<br>
@@ -58,7 +58,7 @@
 -아이에 관한 모든 것을 휴대폰으로 제어할 수 있습니다. <br>
 -아이의 상태를 휴대폰으로 확인 할 수 있습니다.<br>
 <h2>4. 프로젝트 결과 이미지 </h2> 
-<div 
+<div align ="center">
 <img src="https://user-images.githubusercontent.com/53994431/193015908-5ae4bf54-857a-4c67-9026-b9aea7768bda.png" width = 500 height = 750>
 <img src ="https://user-images.githubusercontent.com/53994431/193013575-09ccdd37-7d48-4c49-93f4-f345b1e13817.png" width = 500 height = 750>
 <img src = "https://user-images.githubusercontent.com/53994431/193013590-5e494966-589c-4d68-9304-665047e98d4a.png" width = 500 height = 750>
