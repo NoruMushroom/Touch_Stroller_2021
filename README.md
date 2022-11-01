@@ -59,9 +59,9 @@
 -아이의 상태를 휴대폰으로 확인 할 수 있습니다.<br>
 <h2>4. 프로젝트 결과 이미지 </h2> 
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/53994431/193015908-5ae4bf54-857a-4c67-9026-b9aea7768bda.png" width = 500 height = 750>
-<img src ="https://user-images.githubusercontent.com/53994431/193013575-09ccdd37-7d48-4c49-93f4-f345b1e13817.png" width = 500 height = 750>
-<img src = "https://user-images.githubusercontent.com/53994431/193013590-5e494966-589c-4d68-9304-665047e98d4a.png" width = 500 height = 750>
+<img src="https://user-images.githubusercontent.com/53994431/193015908-5ae4bf54-857a-4c67-9026-b9aea7768bda.png" width = 333 height = 500>
+<img src ="https://user-images.githubusercontent.com/53994431/193013575-09ccdd37-7d48-4c49-93f4-f345b1e13817.png" width = 333 height = 500>
+<img src = "https://user-images.githubusercontent.com/53994431/193013590-5e494966-589c-4d68-9304-665047e98d4a.png" width = 333 height = 500>
 </div>
 <h2> * Languages & Tools </h2>
 <div class="col">
